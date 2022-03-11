@@ -13,6 +13,7 @@ import androidx.annotation.Nullable;
 import org.w3c.dom.Text;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class CustomList extends ArrayAdapter<City> {
 
@@ -48,12 +49,20 @@ public class CustomList extends ArrayAdapter<City> {
 
     }
 
-    public int getCount(){
-        return cities.size();
-    }
-
     public void addCity(City city){
         cities.add(city);
-        return;
     }
+
+    public boolean hasCity(City city){
+        return true;
+    }
+
+    /*public void deleteCity(City city){
+
+    }*/
+
+    /*public int getCount(){
+        return cities.size();
+    }*/
+
 }
