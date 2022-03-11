@@ -36,15 +36,16 @@ public class CustomListTest {
 
     /*@Test
     public void deleteCityTest(){
-        City city = new City("Vancouver", "BC");
+        final City city = new City("Vancouver", "BC");
         list.addCity(city);
         list.deleteCity(city);
+        //assertThrows(IllegalArgumentException.class, () -> {list.deleteCity(city);});
     }*/
 
-    /*@Test
+    @Test
     public void getCountTest(){
-        assertEquals(0, list.countCities());
+        assertEquals(0, list.getCount());
         list.addCity(new City("Edmonton", "AB"));
-        assertEquals(1, list.countCities());
-    }*/
+        assertEquals(1, list.getCount());
+    }
 }
