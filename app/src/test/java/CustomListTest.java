@@ -34,13 +34,13 @@ public class CustomListTest {
         assertFalse(list.hasCity(new City("Halifax","NS")));
     }
 
-    /*@Test
+    @Test
     public void deleteCityTest(){
         final City city = new City("Vancouver", "BC");
         list.addCity(city);
         list.deleteCity(city);
-        //assertThrows(IllegalArgumentException.class, () -> {list.deleteCity(city);});
-    }*/
+        assertTrue(list.isEmpty());
+    }
 
     @Test
     public void countCitiesTest(){
